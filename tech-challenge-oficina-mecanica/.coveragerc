@@ -1,0 +1,14 @@
+[run]
+omit =
+    */__init__.py
+    app/domain/repositories/interfaces.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:
+    if str\(ROOT_DIR\) not in sys\.path:
+    raise NotImplementedError
+    pass
+    @abstractmethod

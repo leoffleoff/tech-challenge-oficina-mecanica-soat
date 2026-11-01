@@ -1,0 +1,30 @@
+Run started:2026-10-31 17:38:46.485346+00:00
+
+Test results:
+>> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'bearer'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b106_hardcoded_password_funcarg.html
+   Location: app/presentation\api\v1\endpoints\auth.py:41:11
+40	    access_token = create_access_token(subject=user.username)
+41	    return TokenResponse(access_token=access_token, token_type="bearer")
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 2030
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 1
+		High: 0
+Files skipped (0):
