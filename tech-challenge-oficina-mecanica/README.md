@@ -62,9 +62,9 @@ pytest tests/ -v --cov=app --cov-report=term-missing
 ## 9. Instruções para Acesso ao Swagger
 Com a aplicação rodando, acesse no navegador:
 
-Swagger UI: http://localhost:8000/docs
+Swagger UI: http://localhost:8080/docs
 
-ReDoc: http://localhost:8000/redoc
+ReDoc: http://localhost:8080/redoc
 
 ## 10. Decisão e Justificativa do Banco de Dados Escolhido
 SQLite: Utilizado em ambiente de desenvolvimento local e suíte de testes automatizados por sua simplicidade, ausência de dependências externas e velocidade na execução em memória.
